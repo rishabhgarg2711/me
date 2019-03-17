@@ -5,7 +5,7 @@ body{
 	margin:0;
 }
 .slide{
-	width:80%;
+	width:90%;
 	margin:auto;
 	padding:10px 0 20px 0;
 	
@@ -19,16 +19,16 @@ body{
 }
 
 .slide h3{
-	font-size: 3vh;
+	font-size: 4vh;
 	border-top:none;
 	background-color:transparent;
 }
 .carousel-caption {
 position: absolute;
-  top: 10%;
+  top: 20%;
 }
 .slide p {
-  font-size: 3vmin;
+  font-size: 3.5vmin;
 }
 .slide img{
 	filter:brightness(30%);
