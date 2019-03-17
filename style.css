@@ -7,7 +7,8 @@ body{
 .slide{
 	width:80%;
 	margin:auto;
-	padding:0 0 20px 0;
+	padding:10px 0 20px 0;
+	
 }
 
 .about img{
@@ -17,17 +18,20 @@ body{
 	border:solid 2px #000000;
 }
 
-.slide h1{
-	font-size:3em;
-	font-weight:bold;
+.slide h3{
+	font-size: 3vh;
 	border-top:none;
 	background-color:transparent;
 }
-.slide p{
-	font-size:1.5em;
+.carousel-caption {
+position: absolute;
+  top: 10%;
+}
+.slide p {
+  font-size: 3vmin;
 }
 .slide img{
-	filter:brightness(50%);
+	filter:brightness(30%);
 }
 .intro p{
 	font-size:2em;
