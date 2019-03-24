@@ -1,31 +1,30 @@
 body{
-	background-color:#ffffff;
+	
 	font-family: 'Esteban', serif;
+	margin: 0;
 	padding:0;
-	margin:0;
+	background-color: #fcfcfc;
 }
-.navbar-light .navbar-nav .nav-link {
-    color:#ffffff;
- }
-.navbar-light .navbar-brand {
+
+.navbar-dark .navbar-brand {
 	color: white;
 	font-size: 1.5em;
 }
-.navbar .navbar-nav .nav-item > a{
-	color:gray;
+.navbar{
+	background-color: #995F40;
 }
 .navbar .navbar-nav .nav-item > a:hover{
     
     color: #ffffff;
 }
-.navbar-light .navbar-nav .show > .nav-link,
+/*.navbar-light .navbar-nav .show > .nav-link,
  .navbar-light .navbar-nav .active > .nav-link,
   .navbar-light .navbar-nav .nav-link.show,
    .navbar-light .navbar-nav .nav-link.active {
   color: white;
-}
+}*/
 .slide{
-	width:90%;
+	
 	margin:auto;
 	padding:10px 0 20px 0;
 	
@@ -63,18 +62,18 @@ position: absolute;
 	padding:0 0 50px 0;
 }
 .about{
-	width:75%;
-	margin:auto;
-	border-top:solid 4px #e28204;
+	
+	
+	border-top:solid 4px #000000;
 }
 .about p{
 	font-size:1.1em;
 	color:black;
 }
 .skills{
-	width:75%;
+
 	margin:auto;
-		border-top:solid 4px #e28204;
+		border-top:solid 4px #000000;
 		padding:0 0 50px 0;
 }
 .skills li{
@@ -82,29 +81,9 @@ position: absolute;
 
 }
 
-.social{
-	
-	padding:0 0 50px 0;
-}
-.social{
-	width:75%;
-	margin:auto;
-		border-top:solid 4px #e28204;
-}
-.social a{
-	font-size:1.5em;
-	margin:10px;
-	color:black;
-	text-align:center;
-}
-.quali{
-	padding:0 0 50px 0;
-}
-
 .footer {
-	width:75%;
 	padding: 0 0 50px 0;
-	border-top:solid 4px #e28204;
+	border-top:solid 4px #000000;
 	margin:auto;
 }
 .footer a{
@@ -113,33 +92,39 @@ position: absolute;
 }
 .footer h5{
 	text-align:center;
-	color:black;
+	
 }
 .up{
-	width:100%;
-	height:50px;
-	margin:0;
+	
+	margin-bottom:0;
 	color: white;
-	padding:0;
+	padding-bottom: 1px;
 	text-align:center;
 	
 }
-
+.up p{
+	opacity: 0.6;
+}
+.up i{
+	margin:20px 20px 15px 20px;
+	font-size: 2em;
+}
+.up a{
+	color:#ffffff;
+}
 h1{
 	color:#ffffff;
 	font-size:1.5em;
-	background-color:#f2a746;
-	width:auto;
+	background-color:#343a40;
+	
+	text-align: center;
  }
 
 a:link{
 	text-decoration:none;
 }
-.social img{
-	width:35%;
-	padding-top:10%;
-}
+
 .navbar.scrolled {
-    background: rgb(222,192,222);
+    background: #343a40;
     transition: background 500ms;
 }

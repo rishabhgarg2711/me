@@ -4,12 +4,14 @@
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Esteban" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<title>
 		Rishabh Garg
 		</title>
 	</head>
 		</body>
-			<nav class="navbar navbar-expand-md navbar-light bg-dark mainNavbar fixed-top" >
+
+			<nav id="mainNavbar" class="navbar navbar-expand-md navbar-dark fixed-top" >
 			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
@@ -26,9 +28,6 @@
 					<a class="nav-link" href="#skills">Skills</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#social">Social</a>
-				  </li>
-				  <li class="nav-item">
 					<a class="nav-link" href="resume.docx" download="resume.docx">Resume</a>
 				  </li>
 				  <li class="nav-item">
@@ -38,6 +37,7 @@
 			  </div>
 			  
 			</nav>
+			<div class="container">
 			<div class="bd-example slide "id="top">
 			  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
 			    <ol class="carousel-indicators">
@@ -86,7 +86,7 @@
 			
 		</div>
 		<!--skills-->
-		<div class="skills" id="skills">
+		<div class="skills " id="skills">
 		<h1>My Skills</h1>
 		<ol>
 		<li>Web development</li>
@@ -103,28 +103,25 @@
 		</ul>
 		</ol>
 		</div>
-		<!--social-->
-		
-		<div class="social" id="social">
-		<h1>Social Links</h1>
-		<div class="row">
-		<div class="col-md-3 col-6">
-		<a href="https://www.facebook.com/rishabhgarg27111997"><img src="img/images.jpg" /></a></div>
-		<div class="col-md-3 col-6">
-		<a href="https://www.linkedin.com/in/rishabh-garg-259070175/"><img src="img/download.png"  /></a></div>
-		<div class="col-md-3  col-6">
-		<a href="https://github.com/rishabhgarg2711"><img src="img/14.png" /></a></div>
-		<div class="col-md-3 col-6">
-		<a href="https://www.instagram.com/rishabhgarg2711/"><img src="img/images (1).jpg"  /></a></div>
-		</div>
-		</div>
-			<div class="footer" id="footer">
+	
+		<div class="footer" id="footer">
 			<h1>Get in touch</h1>
 			<h5>If you want to get in touch or just say hi,send an email from here, <a href="mailto:rishabhgarg2711@gmail.com">Mail me</a></h5>
 			</div>
+		</div>
+			
 			<div class="up bg-dark" id="up">
-			<p>Copyright © 2018 Rishabh Garg</p>
+				<a href="https://www.facebook.com/rishabhgarg27111997"><i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/rishabhgarg2711/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.linkedin.com/in/rishabh-garg-259070175/"><i class="fab fa-linkedin-in"></i></a>
+				<a href="https://github.com/rishabhgarg2711"><i class="fab fa-github"></i></a>
+			<p>Rishabh Garg © 2018 </p>
 			</div>
+			
+			
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+			<script src="js/bootstrap.min.js"></script>
 			 <script>
         	$(function () {
             $(document).scroll(function () {
@@ -133,16 +130,13 @@
          		  						 });
         					});
     		</script>
-			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-			<script src="js/bootstrap.min.js" ></script>
 			<script>
 			var selector = '.navbar-nav li';
 
-$(selector).on('click', function(){
-    $(selector).removeClass('active');
-    $(this).addClass('active');
-});
+			$(selector).on('click', function(){
+    		$(selector).removeClass('active');
+    		$(this).addClass('active');
+			});	
 </script>
 		</body>
 </html>
