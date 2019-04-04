@@ -90,15 +90,12 @@ position: absolute;
 	font-weight: bold;
 	font-size: 1.5em;
 }
-.footer h5{
-	text-align:center;
-	
-}
+
 .up{
 	
-	margin-bottom:0;
+	margin:0;
 	color: white;
-	padding-bottom: 1px;
+	padding: 1px;
 	text-align:center;
 	
 }
@@ -127,4 +124,9 @@ a:link{
 .navbar.scrolled {
     background: #343a40;
     transition: background 500ms;
+}
+
+.form-group label{
+	font-weight: bold;
+	font-size: 1.2rem;
 }
