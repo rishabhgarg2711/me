@@ -116,22 +116,42 @@
 		<div class="footer" id="footer">
 			<h1>Get in touch</h1>
 			<h5>If you want to get in touch,fill up this awesome form or just say hi by sending an email from here, <a href="mailto:rishabhgarg2711@gmail.com">Mail me</a></h5>
-			<form>
+			<form name="contactForm" method="post" action="">
 			  <div class="form-group">
 			  	<div class="row">
     			<div class="col-sm-7 col-lg-6">
 			    <label for="exampleInputEmail1">Email address</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+			    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
 			    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 				</div>
 				</div>
 			</div>
 			  <div class="form-group">
 			    <label for="exampleFormControlTextarea1">Message</label>
-			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			    <textarea class="form-control" id="textarea" rows="3"></textarea>
 			 </div>
-			 <button class="btn btn-primary" type="submit">Submit</button>
+			 <button class="btn btn-primary" name="c_submit" type="submit">Submit</button>
 			</form>
+			<?php
+				if(isset($_POST['c_submit'])) {
+				 
+				    $email_to = "rishabhgarg2711@gmail.com";
+				    $email_subject = "Enquiry from your portfolio";
+
+				  
+				    $email_from = $_POST['email'];  
+				    $comments = $_POST['textarea'];
+
+				    $email_message = "Email: ".$email_from."\n";
+				    $email_message .= "Comments: ".$comments."\n";
+
+				    $headers = 'From: '.$email_from."\r\n".
+					'Reply-To: '.$email_from."\r\n".
+					'X-Mailer: PHP/' . phpversion();
+				    mail($email_to, $email_subject, $email_message, $headers);  
+				    
+				}
+				?>
 			</div>
 		</div>
 
